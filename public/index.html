@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halloween Night | O Evento do Ano</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <div class="logo">🎃HALLOWEEN NIGHT</div>
+            <a href="#" class="btn-nav">Comprar Ingresso</a>
+        </nav>
+        
+        <div class="hero-content">
+            <h1>HALLOWEEN NIGHT</h1>
+            <p>A festa de aniversário mais assustadora do ano</p>
+            <a href="#" class="btn-main" id="openModalBtn">🎟️ Garanta seu Ingresso</a>
+        </div>
+
+        <div class="countdown">
+            <p>CONTAGEM REGRESSIVA</p>
+            <div class="timer">
+                <div class="time-box"><span id="days">199</span>DIAS</div>
+                <div class="time-box"><span id="hours">04</span>HORA</div>
+                <div class="time-box"><span id="minutes">46</span>MIN</div>
+                <div class="time-box"><span id="seconds">06</span>SEG</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="info-section">
+        <h2 class="title-purple">INFORMAÇÕES DO EVENTO</h2>
+        <div class="cards-container">
+            <div class="card">
+                <span class="icon">📅</span>
+                <h3>DATA</h3>
+                <p>31 de Outubro, 2026</p>
+            </div>
+            <div class="card">
+                <span class="icon">📍</span>
+                <h3>LOCAL</h3>
+                <p>Casa de Eventos Phantom — Rua das Bruxas, 1257</p>
+            </div>
+            <div class="card">
+                <span class="icon">🕒</span>
+                <h3>HORÁRIO</h3>
+                <p>22h às 05h</p>
+            </div>
+        </div>
+
+        <div class="about">
+            <h2 class="title-orange">SOBRE O EVENTO</h2>
+            <p>Prepare-se para a noite mais aterrorizante e divertida do ano! Uma festa de aniversário com tema Halloween que promete arrepiar. Fantasias obrigatórias, decoração cinematográfica, drinks temáticos e muita música para dançar até o amanhecer. Venha viver uma experiência sobrenatural! 🧛‍♂️</p>
+        </div>
+    </section>
+
+    <section class="atracoes">
+        <h2 class="title-purple">ATRAÇÕES</h2>
+        <div class="cards-container">
+            <div class="card-small">
+                <span class="icon">🎧</span>
+                <h3>DJ Phantom</h3>
+                <p>Sets de house e techno até o amanhecer</p>
+            </div>
+            <div class="card-small">
+                <span class="icon">🎤</span>
+                <h3>MC Terror</h3>
+                <p>Animação e interação com o público</p>
+            </div>
+            <div class="card-small">
+                <span class="icon">🍸</span>
+                <h3>Bar Temático</h3>
+                <p>Drinks exclusivos de Halloween</p>
+            </div>
+            <div class="card-small">
+                <span class="icon">📸</span>
+                <h3>Photo Booth</h3>
+                <p>Cenários instagramáveis e sombrios</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-final">
+        <h2 class="title-orange">NÃO FIQUE DE FORA!</h2>
+        <p>Ingressos limitados. Garanta o seu antes que acabem.</p>
+        <a href="#" class="btn-main" id="openModalBtn">🎟️ Garanta seu Ingresso</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Halloween Night Party. Todos os direitos reservados.</p>
+        <p>🎃 Fantasias obrigatórias 🎃</p>
+    </footer>
+    <div class="modal" id="ticketModal">
+  <div class="modal-content">
+
+    <h2>Escolha seu ingresso</h2>
+
+    <div class="tickets">
+
+      <div class="ticket" data-type="pista">
+        <h3>Pista</h3>
+        <p>Acesso geral ao evento</p>
+        <button class="select-ticket">Selecionar</button>
+      </div>
+
+      <div class="ticket" data-type="vip">
+        <h3>VIP</h3>
+        <p>Acesso + área VIP</p>
+        <button class="select-ticket">Selecionar</button>
+      </div>
+
+      <div class="ticket" data-type="backstage">
+        <h3>Backstage</h3>
+        <p>Acesso completo + bastidores</p>
+        <button class="select-ticket">Selecionar</button>
+      </div>
+
+    </div>
+
+    <button id="closeModal">Fechar</button>
+
+  </div>
+</div>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

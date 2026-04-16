@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, .title-purple, .title-orange {
+    font-family: 'Creepster', cursive;
+    letter-spacing: 2px;
+}
+
+.title-purple {
+    color: #a64dff;
+    text-shadow: 0 0 10px #a64dff;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.title-orange {
+    color: #ff7518;
+    text-shadow: 0 0 10px #ff7518;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.6), #0a0a0a), 
+                url('../imagens/halloween-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ff7518;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hero-content {
+    margin-top: 100px;
+}
+
+.hero-content h1 {
+    font-size: 5rem;
+    color: #ff7518;
+    margin-bottom: 10px;
+}
+
+.btn-nav {
+    background: #ff7518;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(255, 117, 24, 0.4);
+}
+
+.btn-main {
+    display: inline-block;
+    background: #ff7518;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    box-shadow: 0 0 20px #ff7518;
+    transition: transform 0.3s;
+}
+
+.btn-main:hover {
+    transform: scale(1.05);
+}
+
+.countdown {
+    margin-top: 50px;
+}
+
+.timer {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.time-box {
+    background: rgba(166, 77, 255, 0.1);
+    border: 1px solid #a64dff;
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 80px;
+    box-shadow: inset 0 0 10px #a64dff;
+}
+
+.time-box span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff7518;
+}
+
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.card, .card-small {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(166, 77, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover, .card-small:hover {
+    border-color: #a64dff;
+    background: rgba(166, 77, 255, 0.05);
+}
+
+.icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+footer {
+    padding: 40px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tickets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ticket {
+        width: 100%;
+    }
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: rgba(10, 10, 10, 0.95);
+    border: 1px solid rgba(166, 77, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(166, 77, 255, 0.2);
+}
+
+
+.tickets {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ticket {
+    flex: 1;
+    min-width: 160px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(166, 77, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.ticket:hover {
+    border-color: #a64dff;
+    background: rgba(166, 77, 255, 0.05);
+}
+
+.ticket button {
+    margin-top: 12px;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background: #ff7518;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255, 117, 24, 0.4);
+    transition: transform 0.3s;
+}
+
+.ticket button:hover {
+    transform: scale(1.05);
+}
+
+
+#closeModal {
+    margin-top: 20px;
+    background: transparent;
+    border: 1px solid #a64dff;
+    color: #a64dff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#closeModal:hover {
+    background: rgba(166, 77, 255, 0.1);
+}
