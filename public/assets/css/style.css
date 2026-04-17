@@ -31,8 +31,8 @@ h1, .title-purple, .title-orange {
     margin-bottom: 20px;
 }
 
-.hero {
-    height: 100vh;
+.tela-inicial {
+    height: 75vh;
     background: linear-gradient(rgba(0,0,0,0.6), #0a0a0a), 
                 url('../imagens/halloween-banner.jpg');
     background-size: cover;
@@ -57,11 +57,11 @@ nav {
     font-size: 1.2rem;
 }
 
-.hero-content {
+.conteudo-inicial {
     margin-top: 100px;
 }
 
-.hero-content h1 {
+.conteudo-inicial h1 {
     font-size: 5rem;
     color: #ff7518;
     margin-bottom: 10px;
@@ -93,32 +93,6 @@ nav {
 
 .btn-main:hover {
     transform: scale(1.05);
-}
-
-.countdown {
-    margin-top: 50px;
-}
-
-.timer {
-    display: flex;
-    gap: 15px;
-    margin-top: 15px;
-}
-
-.time-box {
-    background: rgba(166, 77, 255, 0.1);
-    border: 1px solid #a64dff;
-    padding: 15px;
-    border-radius: 10px;
-    min-width: 80px;
-    box-shadow: inset 0 0 10px #a64dff;
-}
-
-.time-box span {
-    display: block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ff7518;
 }
 
 
@@ -169,20 +143,14 @@ footer {
     text-align: center;
 }
 
-/* RESPONSIVO */
 @media (max-width: 768px) {
-    .hero-content h1 {
+    .tela-inicial h1 {
         font-size: 3rem;
     }
 
     .cards-container {
         flex-direction: column;
         align-items: center;
-    }
-
-    .timer {
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .tickets {
@@ -205,7 +173,7 @@ footer {
     z-index: 999;
 }
 
-.modal-content {
+.conteudo-modal {
     background: rgba(10, 10, 10, 0.95);
     border: 1px solid rgba(166, 77, 255, 0.3);
     padding: 30px;
