@@ -85,9 +85,8 @@
         <p>© 2026 Halloween Night Party. Todos os direitos reservados.</p>
         <p>🎃 Fantasias obrigatórias 🎃</p>
     </footer>
-    <div class="modal" id="ticketModal">
+<div class="modal" id="ticketModal">
   <div class="conteudo-modal">
-
     <h2>Escolha seu ingresso</h2>
 
     <div class="tickets">
@@ -95,7 +94,7 @@
       <div class="ticket" data-type="pista">
         <h3>Pista</h3>
         <p>Acesso geral ao evento</p>
-        <button class="select-ticket">Selecionar</button>
+        <button class="select-ticket" onclick="abrirFormModal()">Selecionar</button>
       </div>
 
       <div class="ticket" data-type="vip">
@@ -105,17 +104,38 @@
       </div>
 
       <div class="ticket" data-type="backstage">
-        <h3>Backstage</h3>
+        <h3>Backstage</h3>1
         <p>Acesso completo + bastidores</p>
         <button class="select-ticket">Selecionar</button>
       </div>
 
     </div>
 
-    <button id="closeModal" onclick="fecharModal()">Fechar</button>
+    <button id="closeModal" onclick="fecharModal('ticketmodal')">Fechar</button>
 
   </div>
 </div>
+ <div class="modal modal-hidden" id="modalForm">
+        <h2>preencha seu dados</h2>
+        <div>
+            <input type="email" placeholder="email">
+        </div>
+        <div>
+            <input type="tel" placeholder="telefone">
+        </div>
+        <div>
+            <input type="text" placeholder="cpf">
+        </div>
+        <div>
+            <input type="number" placeholder="quantidade">
+        </div>
+        <div>
+            <button id="enviar-form">finalizar pagamento</button>
+        </div>
+        <div>
+            <button id="fechar-modal" onclick="fecharFormModal()">fechar</button>
+        </div>
+  </div>
 <script src="assets/js/script.js"></script>
 </body>
 </html>

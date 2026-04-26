@@ -1,19 +1,27 @@
 {
+  "dependencies": {
+    "@fastify/static": "^9.1.2",
+    "fastify": "^5.8.5"
+  },
   "name": "spooky-myprjt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "node --watch --no-warnings server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagoassuncaodev/ingress-buy.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "stripe": "^22.0.1"
-  }
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/thiagoassuncaodev/ingress-buy/issues"
+  },
+  "homepage": "https://github.com/thiagoassuncaodev/ingress-buy#readme"
 }

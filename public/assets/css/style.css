@@ -162,7 +162,13 @@ footer {
         width: 100%;
     }
 }
-
+#modalForm{
+    display: flex;
+    flex-direction: column;
+}
+.modal-hidden{
+    display: none;
+}
 .modal {
     position: fixed;
     inset: 0;
@@ -170,7 +176,6 @@ footer {
     display: none;
     justify-content: center;
     align-items: center;
-    z-index: 999;
 }
 
 .conteudo-modal {
