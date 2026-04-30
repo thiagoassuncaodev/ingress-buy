@@ -11,14 +11,14 @@
 
     <header class="tela-inicial">
         <nav>
-            <div class="logo">🎃HALLOWEEN NIGHT</div>
+            <div class="logo">Halloween</div>
             <a href="#" class="btn-nav" onclick="abrirModal()">Comprar Ingresso</a>
         </nav>
         
         <div class="conteudo-inicial">
-            <h1>HALLOWEEN NIGHT</h1>
+            <h1>Halloween</h1>
             <p>A festa de aniversário mais assustadora do ano</p>
-            <a href="#" class="btn-main" id="openModalBtn" onclick="abrirModal()">🎟️ Garanta seu Ingresso</a>
+            <a href="#" class="btn-main" id="openModalBtn" onclick="abrirModal()">Garanta seu Ingresso</a>
         </div>
 
     </header>
@@ -78,12 +78,12 @@
     <section class="cta-final">
         <h2 class="title-orange">NÃO FIQUE DE FORA!</h2>
         <p>Ingressos limitados. Garanta o seu antes que acabem.</p>
-        <a href="#" class="btn-main" id="openModalBtn" onclick="abrirModal()">🎟️ Garanta seu Ingresso</a>
+        <a href="#" class="btn-main" id="openModalBtn" onclick="abrirModal()">Garanta seu Ingresso</a>
     </section>
 
     <footer>
         <p>© 2026 Halloween Night Party. Todos os direitos reservados.</p>
-        <p>🎃 Fantasias obrigatórias 🎃</p>
+        <p> Fantasias obrigatórias </p>
     </footer>
 <div class="modal" id="ticketModal">
   <div class="conteudo-modal">
@@ -104,7 +104,7 @@
       </div>
 
       <div class="ticket" data-type="backstage">
-        <h3>Backstage</h3>1
+        <h3>Backstage</h3
         <p>Acesso completo + bastidores</p>
         <button class="select-ticket">Selecionar</button>
       </div>
@@ -116,25 +116,30 @@
   </div>
 </div>
  <div class="modal modal-hidden" id="modalForm">
-        <h2>preencha seu dados</h2>
+    <form action="" id="pedido">
+        <h2 class="title-modal-segundo">preencha seu dados</h2>
         <div>
-            <input type="email" placeholder="email">
+            <input type="text" placeholder="nome" class="input" name="inNome">
         </div>
         <div>
-            <input type="tel" placeholder="telefone">
+            <input type="email" placeholder="email" class="input" name="inEmail">
         </div>
         <div>
-            <input type="text" placeholder="cpf">
+            <input type="tel" placeholder="telefone" class="input" name="inTelefone">
         </div>
         <div>
-            <input type="number" placeholder="quantidade">
+            <input type="text" placeholder="cpf" class="input" name="inCpf">
         </div>
         <div>
-            <button id="enviar-form">finalizar pagamento</button>
+            <input type="number" placeholder="quantidade" class="input" name="inQuantidade">
         </div>
         <div>
-            <button id="fechar-modal" onclick="fecharFormModal()">fechar</button>
+            <input type="submit" class="button-finalizar" value="finalizar compra">
         </div>
+        <div>
+            <button id="fechar-modal" onclick="fecharFormModal()" class="button-fechar">fechar</button>
+        </div>
+    </form>
   </div>
 <script src="assets/js/script.js"></script>
 </body>

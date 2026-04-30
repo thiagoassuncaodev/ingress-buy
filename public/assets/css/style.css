@@ -18,23 +18,23 @@ h1, .title-purple, .title-orange {
 }
 
 .title-purple {
-    color: #a64dff;
-    text-shadow: 0 0 10px #a64dff;
-    font-size: 2.5rem;
+    color: #F5F5DC;
+    text-shadow: 0 0 10px #F5F5DC;
+    font-size: 2.6rem;
     margin-bottom: 30px;
 }
 
 .title-orange {
-    color: #ff7518;
-    text-shadow: 0 0 10px #ff7518;
-    font-size: 2.5rem;
+    color: #F5F5DC;
+    text-shadow: 0 0 10px #F5F5DC;
+    font-size: 2.6rem;
     margin-bottom: 20px;
 }
 
-.tela-inicial {
-    height: 75vh;
+.tela-inicial { 
+    height: 65vh;
     background: linear-gradient(rgba(0,0,0,0.6), #0a0a0a), 
-                url('../imagens/halloween-banner.jpg');
+                url('../imagens/hallo-banner.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -52,9 +52,10 @@ nav {
 }
 
 .logo {
-    color: #ff7518;
+    color: #F5F5DC;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    text-shadow: 0 0 10px #F5F5DC;
 }
 
 .conteudo-inicial {
@@ -62,32 +63,30 @@ nav {
 }
 
 .conteudo-inicial h1 {
-    font-size: 5rem;
-    color: #ff7518;
+    font-size: 6.5rem;
+    color: #F5F5DC;
     margin-bottom: 10px;
 }
 
 .btn-nav {
-    background: #ff7518;
+    background: #4B0082;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
-    box-shadow: 0 0 15px rgba(255, 117, 24, 0.4);
 }
 
 .btn-main {
     display: inline-block;
-    background: #ff7518;
-    color: white;
+    background: #4B0082;
+    color: rgb(255, 255, 255);
     padding: 15px 40px;
     text-decoration: none;
     border-radius: 12px;
     font-weight: bold;
     font-size: 1.2rem;
     margin-top: 20px;
-    box-shadow: 0 0 20px #ff7518;
     transition: transform 0.3s;
 }
 
@@ -111,7 +110,7 @@ section {
 
 .card, .card-small {
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(166, 77, 255, 0.3);
+    border: 1px solid #ffffff;
     padding: 30px;
     border-radius: 15px;
     width: 280px;
@@ -119,7 +118,7 @@ section {
 }
 
 .card:hover, .card-small:hover {
-    border-color: #a64dff;
+    border-color: #ffffff;
     background: rgba(166, 77, 255, 0.05);
 }
 
@@ -165,6 +164,10 @@ footer {
 #modalForm{
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    background: rgba(10, 10, 10, 0.95);
 }
 .modal-hidden{
     display: none;
@@ -180,14 +183,14 @@ footer {
 
 .conteudo-modal {
     background: rgba(10, 10, 10, 0.95);
-    border: 1px solid rgba(166, 77, 255, 0.3);
+    border: 1px solid #4B0082;
     padding: 30px;
     border-radius: 15px;
     width: 90%;
     max-width: 600px;
     color: white;
     text-align: center;
-    box-shadow: 0 0 20px rgba(166, 77, 255, 0.2);
+    box-shadow: 0 0 20px #4B0082;
 }
 
 
@@ -203,14 +206,14 @@ footer {
     flex: 1;
     min-width: 160px;
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(166, 77, 255, 0.3);
+    border: 1px solid #4B0082;
     padding: 20px;
     border-radius: 15px;
     transition: 0.3s;
 }
 
 .ticket:hover {
-    border-color: #a64dff;
+    border-color: #4B0082;
     background: rgba(166, 77, 255, 0.05);
 }
 
@@ -220,11 +223,11 @@ footer {
     width: 100%;
     border: none;
     border-radius: 12px;
-    background: #ff7518;
+    background: #4B0082;
     color: white;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 15px rgba(255, 117, 24, 0.4);
+    box-shadow: 0 0 15px #4B0082;
     transition: transform 0.3s;
 }
 
@@ -236,8 +239,8 @@ footer {
 #closeModal {
     margin-top: 20px;
     background: transparent;
-    border: 1px solid #a64dff;
-    color: #a64dff;
+    border: 1px solid #4B0082;
+    color: #4B0082;
     padding: 10px 15px;
     border-radius: 10px;
     cursor: pointer;
@@ -246,4 +249,42 @@ footer {
 
 #closeModal:hover {
     background: rgba(166, 77, 255, 0.1);
+}
+.button-fechar{
+    display: inline-block;
+    background: #4B0082;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+.button-finalizar{
+    display: inline-block;
+    background: #4B0082;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+.input{
+    background: #4B0082;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: #1f0233;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.title-modal-segundo{
+    color: #F5F5DC;
+    text-shadow: 0 0 10px #F5F5DC;
+    font-size: 2.6rem;
+    margin-bottom: 30px;
 }
